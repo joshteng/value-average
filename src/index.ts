@@ -84,7 +84,7 @@ async function backtestValueAveraging() {
           6
         )} ${SYMBOL} at $${btcPrice} with $${investmentNeeded} on ${new Date(
           day.closeTime
-        ).toLocaleDateString()}; Total Bought: ${total} SOL; Total Spent: ${investmentNeeded}`
+        ).toLocaleDateString()}; Total Bought: ${total} SOL; Total Spent: ${totalInvestment}`
       );
     }
     // If investmentNeeded is negative, it implies we're above the target and do nothing.
