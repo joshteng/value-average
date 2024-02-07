@@ -3,7 +3,7 @@ const API_URL = "https://api.binance.com/api/v3/klines";
 const SYMBOL = "SOLUSDT";
 const INTERVAL = "1d";
 const START_TIME = new Date("2023-01-1").getTime();
-const END_TIME = new Date("2024-1-8").getTime();
+const END_TIME = new Date("2024-2-6").getTime();
 const TARGET_GROWTH_PER_DAY = 10;
 
 interface Candlestick {
@@ -84,7 +84,7 @@ async function backtestValueAveraging() {
           6
         )} ${SYMBOL} at $${btcPrice} with $${investmentNeeded} on ${new Date(
           day.closeTime
-        ).toLocaleDateString()}`
+        ).toLocaleDateString()}; Total Bought: ${total} SOL; Total Spent: ${investmentNeeded}`
       );
     }
     // If investmentNeeded is negative, it implies we're above the target and do nothing.
