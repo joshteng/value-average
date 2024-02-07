@@ -3,8 +3,8 @@ const API_URL = "https://api.binance.com/api/v3/klines";
 const SYMBOL = "SOLUSDT";
 const INTERVAL = "1d";
 const START_TIME = new Date("2023-01-1").getTime();
-const END_TIME = new Date("2023-12-24").getTime();
-const TARGET_GROWTH_PER_DAY = 50;
+const END_TIME = new Date("2024-1-8").getTime();
+const TARGET_GROWTH_PER_DAY = 10;
 
 interface Candlestick {
   openTime: number;
